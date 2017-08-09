@@ -17,7 +17,8 @@
                  [org.danielsz/system "0.4.0"]
                  [org.clojure/tools.namespace "0.2.11"]
                  [http-kit "2.2.0"]
-                 [reagent "0.6.0"]]
+                 [reagent "0.6.0"]
+                 [com.cognitect/transit-cljs "0.8.239"]]
 
   :plugins [[lein-cljsbuild "1.1.6"]
             [lein-environ "1.1.0"]]
