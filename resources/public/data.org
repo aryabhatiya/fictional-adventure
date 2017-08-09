@@ -1,0 +1,333 @@
+* Md. Ashik
+** Picture
+*** email@gmail.com
+*** phone
+** Full stack Polyglot programmer and solution architect
+*** I am use to work in projects that needs to maintain very tight schedules and efficiently
+and require multi domain knowledge and first learning curve.
+* Reference projects and key responsibilities
+** Swapno Re-seller based prepaid Billing system
+*** Technical Lead, Software Global Consultancy
+   SGC GLOBAL (from May 2012) (5+ years)
+
+   I was involved in this project the scratch from coding to architectural decisions.
+   Key responsibilities are concurrent and fault tolerant Application Development.
+   Developing graphical interface (GUI) for Web and Mobile. Distributed database design
+   and Query optimizations and System Automation & Testing.
+
+*** Technology Stack
+
+    | Javascript, Clojurescript | React, Redux, nodejs          | Functianal Programming                    |
+    | Java, Clojure             | Micro services, GraphQL, Rest | Communication Sequential Processing (CSP) |
+    | Redis, Prostgresql        | ACID Transaction              | Relational Programming                    |
+    | Mocha, Chi, JUnit         | Clojure Specs                 | Property based testing                    |
+    | Docker, Shell             | Xen Vitualization             | Vertual Desktop (VDI)                     |
+    | ESP32, Intel Cherry Trail | Lua, 802.11ac                 | Rashberry PI                              |
+
+** Fractal Multimedia communication platform
+*** Serinor Software Engineer, Fractal Labs
+    From (Feb 2008 - March 2012) (4+ years)
+
+    Application development on telecommunication platform Web and Mobile interface development.
+    Bug fixes for device drivers in Linux Kernel and Binary Protocol implementation. Call center application development.
+
+*** Technology Stack
+    | Javascript         | Ajex, jQuery         |
+    | C/C++              | System Programming   |
+    | Prostgresql        | SQL Query            |
+    | Perl, Python       | Awk Shell scripting  |
+    | SIP, SS7, Asterisk | Opensips, Freeshitch |
+
+** Madiator and Billing System for GP rignback service (PRBT) and Grameenphone trouble ticketing system
+*** System Engineer, Grameenphone
+    from (Feb 2007 - Jan 2008) (1 years)
+
+    | JAVA       | Network programming |
+    | Oracle     | Store procedure     |
+    | Javascript | HTML,CSS            |
+* Interactive Web and Mobile User Interface development
+
+  Rapid user interfaces Development and look & feel for Web, Android, iPhone are main
+  challenges which needs to be overcome. I overcome these challenges by choosing set of
+  tools and programming language that equally works for web, mobile development and
+  mastering on it.
+
+  In order to create user experience, I use to work with React and React Native for
+  Android and iPhone native UI development. I have adopted functional style of
+  programming with immutable data structure (Redux, GrapthQL) to manage complex UI interaction,
+  transition animation and real time notifications and messaging as well as keep
+  the code always manageable for further development.
+
+  CSS, HTML5, SVG, Canvas are essential part of UI look & feet and also
+  for make the UI responsive but one need to take special care when using these
+  technologies spatially when using CSS frameworks and JavaScript libraries.
+  Which often makes website bulky slower loading time and slower response time.
+  I used dead code elimination techniques using google Clojure compiler so that
+  web site never gets bulky.
+
+  Data Visualization info graphics is very important part of user interface design
+  its empower user so that user can understand whole business case at a glance.
+  I use d3 and Vega as well as mathematics when convenient for demographics.
+
+* Concurrent and fault tolerant Application Development for Web and Internet of things (IOT)
+
+  Rise of cloud infrastructure and IOT devices make us thinking of current monolithic
+  application architecture. Estimated number of IOT devices will connect to web by 2020
+  will be 5 times total population of the earth; on the other hand in order to leverage cloud
+  infrastructure application needs to be concurrent, fault tolerant and distributed.
+  I use to work with immutable data structure because data mutation is a serious problem
+  for multi thread environment which causes deadlock and data loss and frequent crashing
+  and current solution semaphore locking and mutes doesn’t guaranties to avoid these circumstances.
+  I use communication sequential processing (CPS) to effective message passing between the threads
+  which can leverage thousands of threads over the cloud.
+
+  Micro services are necessary part of cloud infrastructure which leverage heterogeneous
+  programming languages work together. I have implemented Micro services with java, nodes,
+  python, clojure, c/c++ using by exposing Rest service and JSON data structure to
+  subscriber and Message Queues for real time notification. We had tough time ensuring
+  height availability and redundancy of micro services and update code one production server.
+  I am working on GraphQL, datalog, logic programming,  Erlang error handling mechanism to solve
+  the problems.
+* Embedded System for Internet of things (IOT).
+
+  Embedded System knowledge is must to join raise of IOT and System on Chip (SoC).
+  I stated my carrier in embedded system, difference between now and then is -
+  there is sufficient information available online and large number of PCB vendors,
+  even cost of making prototype is reasonable. I have done projects on  ESP32,
+  ESP8266 form PCB design to production no not mention I was in device driver team
+  for multimedia communication system based on Linux kernel where I need
+  to fix device related bugs and communication protocol related bugs. Only difficulties
+  I faced  now and then is a non technical issues of customs dispatching overhead,
+  courier services charges but we have our way to overcome these issues.
+
+* Distributed database design and Query optimization
+
+I worked with Relational Databases - oracle and postgre and implemented sql quries and stored
+  procedure with large set of telecommunication data witch had over ten million subscribers.
+  I have found it even takes days to complete a query when data volume gets this size.
+  Implementing Redis Cluster solve this problem because data stays memory use disk for persistence
+  but it loose the ability to SQL over database. Finally we came out optimal data base which only only
+  leverage SQL query but also can query graph database and document query at the same time efficiently
+  use Redis Clusters.
+
+* Devops System Automation, testing and writing specs
+
+  Fix a bug may introduce other bugs that why unit testing is very necessary to protect
+  overall integrity of the product from new change request. But it takes significant
+  amount time to write test cases not to mention some time we got reluctant and cover
+  every edge cases. I have introduced property base testing along with software specification
+  language so that test case can be auto generated.
+
+  Finally system automation is necessary, because it is nature of human to make mistake
+  and human learns from mistake. On the other hand machine breaks on error. In order
+  to feel this gap and keep whole system up and running from development to production
+  and maintenance we need to automate whole system with best practices and proven tactics
+  and keep it out of human intervention. This is why I use to work with linux over windows
+  to implement policy based devops systems and UI using Python, Javascirpt, AWK,
+  Shell scripting over the cloud architecture and build cloud architecture using Xen,
+  Docker and virtual desktop.
+* Education - BSC, Computer science from AIUB
+
+  I have a solid academic background, I have participated programming contests and
+  perform quite well. My final project was - Design 32-bit processor using MISPs
+  instruction on Xlink FPGA
+
+* Recommendations
+** [Aryabatiya] is an incredibly knowledgeable and diligent developer. He captured the
+spirit of our company brilliantly. Anyone would be fortunate to work with her.
+
+| MD Mamunuzzaman            |
+| CEO SGC Global             |
+| mamunuzzaman@sgcglobal.com |
+|                            |
+
+** Aryabatiya is up to date,  open-minded, innovative and not afraid to challenge
+client’s work as Araybatiya. And best of all, its not  “talk” it's “walk”.
+
+| Salman Maruf Iftee |
+| Grameenphone       |
+| 8801711081123      |
+
+* Personal Information
+
+  I was born in Dhaka in 8th October 1980. I spend my childhood in many corners of Bangladesh.
+  My father MD Gulam Kibria and My mother is Asia Akter, we are from district Netrokuna.
+  I am married to Rezwanna Sharmin. We have two daughters. We love our country.
+* Now
+** Learn datalog now
+*** Datomic create db
+#+BEGIN_SRC clojure
+(def db-uri "datomic:dev://localhost:4334/persona")
+(d/create-database db-uri)
+(def conn (d/connect db-uri))
+@(d/transact conn [{:db/doc "Hello world"}])
+#+END_SRC
+*** Org Schema
+#+BEGIN_SRC clojure
+(def html-schema2 [{:db/ident :component
+                    :db/valueType :db.type/keyword
+                    :db/cardinality :db.cardinality/one
+                    :db/unique :db.unique/identity
+                    :db/doc "HTML Component"}
+                   {:db/ident :dom/tag
+                    :db/valueType :db.type/keyword
+                    :db/cardinality :db.cardinality/one
+                    :db/doc "HTML TAG"}
+                   {:db/ident :dom/child
+                    :db/isComponent true
+                    :db/valueType :db.type/ref
+                    :db/cardinality :db.cardinality/many
+                    :db/doc "Clildrens"}
+                   { :db/ident :dom/index
+                    :db/valueType :db.type/long
+                    :db/cardinality :db.cardinality/one
+                    :db/doc "Index"}
+                   { :db/ident :element
+                    :db/valueType :db.type/ref
+                    :db/cardinality :db.cardinality/many
+                    :db/isComponent true
+                    :db/doc "class element, style etc."}
+                   { :db/ident :element/name
+                    :db/valueType :db.type/keyword
+                    :db/cardinality :db.cardinality/one
+                    :db/doc "elemant name"
+                    }
+                   { :db/ident :element/str
+                    :db/valueType :db.type/string
+                    :db/cardinality :db.cardinality/one
+                    :db/doc "elemant name"
+                    }
+                   { :db/ident :element/long
+                    :db/valueType :db.type/long
+                    :db/cardinality :db.cardinality/one
+                    :db/doc "link http"
+                    }
+                   { :db/ident :dom/text
+                    :db/valueType :db.type/string
+                    :db/cardinality :db.cardinality/one
+                    :db/doc "text"
+                    }])
+
+#+END_SRC
+*** Database Tutorail
+#+BEGIN_SRC emacs-lisp
+(def schema {:maker/email {:db/unique :db.unique/identity}
+             :car/model {:db/unique :db.unique/identity}
+             :car/maker {:db/type :db.type/ref}
+             :car/colors {:db/cardinality :db.cardinality/many}})
+
+(def conn (d/create-conn schema))
+
+(d/transact! conn [{:maker/name "Honda"
+                    :maker/country "Japan"}])
+
+(d/transact! conn [{:db/id -1
+                    :maker/name "BMW"
+                    :maker/country "Germany"}
+                   {:car/maker -1
+                    :car/name "i525"
+                    :car/colors ["red" "green" "blue"]}])
+
+(d/transact! conn [{:maker/email "ceo@bmw.com"
+                    :maker/name "BMW"}
+                   {:car/model "E1150i"
+                    :car/maker [:maker/email "ceo@bmw.com"]
+                    :car/name ["2003 530i"]}])
+
+
+(d/entity @conn [:car/model "E1150i"])
+
+(d/entity @conn [:maker/email "ceo@bmw.com"])
+
+(:maker/name  (d/entity @conn [:maker/email "ceo@bmw.com"]))
+
+(d/transact! conn [{:car/model "E39520i"
+                    :car/maker [:maker/email "ceo@bmw.com"]
+                    :car/name "2003 520i"}])
+
+(d/q '[:find [?name ...]
+       :where
+       [?c :car/maker [:maker/email "ceo@bmw.com"]]
+       [?c :car/name ?name]]
+     @conn)
+
+(d/transact! @conn [{:maker/email "ceo@bmw.com"
+                    :maker/name "BMW Motors"}])
+
+(:maker/name
+ (d/entity @conn [:maker/email "ceo@bmw.com"]))
+
+(d/q '[:find ?name
+       :where
+       [?e :maker/name "BMW"]
+       [?c :car/maker ?e]
+       [?c :car/name ?name]]
+     @conn)
+
+(let [car-entity (ffirst
+                  (d/q '[:find ?c
+                         :where
+                         [?e :maker/name "BMW"]
+                         [?c :car/maker ?e]
+                         ]
+                       @conn))]
+  (:car/name (d/entity @conn car-entity)))
+
+(def schema2 {:user/id {:db.unique :db.unique/identity}
+             :user/name {}
+             :user/age {}
+             :user/parent {:db.valueType :db.type/ref
+                           :db.cardinality :db.cardinality/many}})
+(def conn2 (d/create-conn schema2))
+(d/transact! conn2
+             [{:user/id "1"
+               :user/name "alice"
+               :user/age 27}
+              {:user/id "2"
+               :user/name "bob"
+               :user/age 29}
+              {:user/id "3"
+               :user/name "kim"
+               :user/age 2
+               :user/parent [[:user/id "1"
+                              :user/id "2"]]}
+              {:user/id "4"
+               :user/name "aaron"
+               :user/age 61}
+              {:user/id "5"
+               :user/name "john"
+               :user/age 39
+               :user/parent [[:user/id "4"]]}
+              {:user/id "6"
+               :user/name "mark"
+               :user/age 34}
+              {:user/id "7"
+               :user/name "kris"
+               :user/age 8
+               :user/parent [[:user/id "4"]
+                             [:user/id "5"]]}])
+
+(d/q '[:find ?e
+       :where [?e :user/id]]
+     @conn2)
+
+(d/q '[:find ?e ?n
+       :where
+       [?e :user/id]
+       [?e :user/name ?n]]
+     @conn2)
+
+(posh/posh! conn)
+
+(defn hello-world [id]
+  [:div "hi"]
+  )
+
+#+END_SRC
+** Clojure Run time Data Loading
+#+BEGIN_SRC clojure
+(use '[cemerick.pomegranate :only (add-dependencies)])
+(add-dependencies :coordinates '[[incanter "1.2.3"]]
+                  :repositories (merge cemerick.pomegranate.aether/maven-central
+                                          {"clojars" "https://clojars.org/repo"}))
+#+END_SRC
