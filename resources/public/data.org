@@ -331,3 +331,12 @@ client’s work as Araybatiya. And best of all, its not  “talk” it's “walk
                   :repositories (merge cemerick.pomegranate.aether/maven-central
                                           {"clojars" "https://clojars.org/repo"}))
 #+END_SRC
+
+#+BEGIN_SRC clojure
+(map #(vector %) '( 1 2 3))
+#+END_SRC
+
+#+RESULTS:
+| 1 |
+| 2 |
+| 3 |
