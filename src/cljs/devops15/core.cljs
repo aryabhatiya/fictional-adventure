@@ -28,7 +28,8 @@
 
 (defn eval []
   [:div
-   [:input {:type "text"
+   [:input {
+            :type "text"
             :on-change #(swap! app-state
                                assoc
                                :input (.. % -target -value))
@@ -43,6 +44,7 @@
 (defn greeting []
   [:div
    [:input {:type "text"
+            :autoFocus true
             :on-change #(.send ws (str "remote " (.. % -target -value)))} ]
    [:h1 (:text @app-state)]
    [:h1 (:ws-text @app-state)]
