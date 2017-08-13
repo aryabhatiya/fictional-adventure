@@ -26,40 +26,6 @@
 (defvar org-babel-clojure-nrepl-timeout nil)
 
 
-
-(defun org-babel-execute:clojure (body params)
-  "Execute a block of Clojure code with Babel."
-  (let ((expanded (org-babel-expand-body:clojure body params))
-        result)
-    (case org-babel-clojure-backend
-      (cider
-       (require 'cider)
-       (let ((result-params (cdr (assoc :result-params params))))
-         (setq result
-               (nrepl-dict-get
-                ; Addition of the org-babel-clojure-nrepl-timeout setting
-                (let ((nrepl-sync-request-timeout org-babel-clojure-nrepl-timeout))
-                  (nrepl-sync-request:eval
-                   expanded (cider-current-connection) (cider-current-session)))
-                (if (or (member "output" result-params)
-                        (member "pp" result-params))
-                    "out"
-                  "value")))))
-      (slime
-       (require 'slime)
-       (with-temp-buffer
-         (insert expanded)
-         (setq result
-               (slime-eval
-                `(swank:eval-and-grab-output
-                  ,(buffer-substring-no-properties (point-min) (point-max)))
-                (cdr (assoc :package params)))))))
-    (org-babel-result-cond (cdr (assoc :result-params params))
-      result
-      (condition-case nil (org-babel-script-escape result)
-        (error result)))))
-
-
 (defun org-babel-execute:clojure (body params)
   "Execute a block of Clojure code with Babel."
   (lexical-let* ((expanded (org-babel-expand-body:clojure body params))
