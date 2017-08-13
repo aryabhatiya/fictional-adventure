@@ -332,7 +332,7 @@ client’s work as Araybatiya. And best of all, its not  “talk” it's “walk
 
 #+BEGIN_SRC clojure
 (use '[cemerick.pomegranate :only (add-dependencies)])
-(add-dependencies :coordinates '[[ring-transit-middleware "0.1.3"]]
+(add-dependencies :coordinates '[[com.datomic/datomic-free "0.9.5561.54"]]
                   :repositories (merge cemerick.pomegranate.aether/maven-central
                                           {"clojars" "https://clojars.org/repo"}))
 #+END_SRC
@@ -373,3 +373,45 @@ tutotial https://lambdaisland.com/episodes/clojurescript-interop
 
 #+RESULTS:
 : niljava.io.ByteArrayOutputStream#'user/out#'user/writernilnil"[\"~#'\",\"foo\"] [\"^ \",\"~:a\",[1,2]]"#'user/in#'user/reader((transit/read reader) (transit/read reader))
+** dynamic binding
+#+BEGIN_SRC clojure
+(def ^:dynamic x 1 )
+(def ^:dynamic x 1 )
+(binding [x 2 y 3]
+  (+ x y ))
+#+END_SRC
+
+#+RESULTS:
+: #'devops15.example-test/x#'devops15.example-test/x
+
+** Datomic Intregration
+#+BEGIN_SRC
+
+#+END_SRC
+** Component
+*** Make component DB
+** data Sync
+*** sente example
+#+BEGIN_SRC clojure
+;; client & server
+(defmethod handle-incoming-message :datasync/tx-data
+  [conn tx-data]
+  (datasync/apply-remote-tx! conn tx-data))
+;; :datsync/bootstrap
+#+END_SRC
+*** Hooking up tx-reports
+#+BEGIN_SRC clojure
+(defn handle-transaction-report!
+  [ws-connection tx-delta]
+  (ws/broadcast! ws-conn [:datsync/tx-data tx-deltas]))
+
+(datsync/start-transaction-listerner!
+  (d/tx-report-queue datomic-conn)
+  (partial handle-transaction-report! ws-connection))
+#+END_SRC
+** Testing from Repl
+#+BEGIN_SRC clojure
+(require '[clojure.test :refer [run-tests]])
+(require 'your-ns.example-test)
+(run-tests 'your-ns.example-test)
+#+END_SRC
