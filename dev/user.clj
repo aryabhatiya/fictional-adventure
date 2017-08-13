@@ -31,12 +31,3 @@
 (def go reloaded.repl/go)
 (def reset reloaded.repl/reset)
 (def reset-all reloaded.repl/reset-all)
-
-;; deprecated, to be removed in Chestnut 1.0
-(defn run []
-  (println "(run) is deprecated, use (go)")
-  (go))
-
-(defn browser-repl []
-  (println "(browser-repl) is deprecated, use (cljs-repl)")
-  (cljs-repl))
