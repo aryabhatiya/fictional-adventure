@@ -19,7 +19,11 @@
                  [org.clojure/tools.namespace "0.2.11"]
                  [http-kit "2.2.0"]
                  [reagent "0.6.0"]
-                 [com.cognitect/transit-cljs "0.8.239"]]
+                 [devcards "0.2.2" :exclusions [cljsjs/react]]
+                 [com.cognitect/transit-cljs "0.8.239"]
+                 [com.datomic/datomic-pro "0.9.5561" :exclusions [com.google.guava/guava]]
+                 ;;[com.datomic/datomic-free "0.9.5561.54" :exclusions [com.google.guava/guava]]
+                 ]
 
   :plugins [[lein-cljsbuild "1.1.6"]
             [lein-environ "1.1.0"]]
@@ -53,6 +57,16 @@
                            :output-to "resources/public/js/compiled/devops15.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
+
+               {:id           "devcards"
+                :source-paths ["src/devcards" "src/cljs"]
+                :figwheel     {:devcards true}
+                :compiler     {:main                 "devops15.core-card"
+                               :optimizations        :none
+                               :output-to            "resources/public/js/devcards.js"
+                               :output-dir           "resources/public/js/devcards"
+                               :asset-path           "js/devcards"
+                               :source-map-timestamp true}}
 
                {:id "test"
                 :source-paths ["src/cljs" "test/cljs" "src/cljc" "test/cljc"]

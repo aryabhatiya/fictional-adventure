@@ -11,7 +11,11 @@
 
 (defn dev-system []
   (assoc (devops15.application/app-system (config))
-    :figwheel-system (fw-sys/figwheel-system (fw-config/fetch-config))
+         :figwheel-system (fw-sys/figwheel-system
+                           (-> (fw-config/fetch-config)
+                               (assoc-in
+                                [:data :build-ids 1 ]
+                                "devcards")))
     :css-watcher (fw-sys/css-watcher {:watch-paths ["resources/public/css"]})))
 
 (set-refresh-dirs "src" "dev")
