@@ -21,28 +21,6 @@ connect to Figwheel.
 When you see the line `Successfully compiled "resources/public/app.js" in 21.36
 seconds.`, you're ready to go. Browse to `http://localhost:10555` and enjoy.
 
-## Trying it out
-
-If all is well you now have a browser window saying 'Hello Chestnut',
-and a REPL prompt that looks like `cljs.user=>`.
-
-Open `resources/public/css/style.css` and change some styling of the
-H1 element. Notice how it's updated instantly in the browser.
-
-Open `src/cljs/devops15/core.cljs`, and change `dom/h1` to
-`dom/h2`. As soon as you save the file, your browser is updated.
-
-In the REPL, type
-
-```
-(ns devops15.core)
-(swap! app-state assoc :text "Interactivity FTW")
-```
-
-Notice again how the browser updates.
-
-
-
 ## Testing
 
 To run the Clojure tests, use
