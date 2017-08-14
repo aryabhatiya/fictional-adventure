@@ -13,3 +13,5 @@
 figwheel_server.log
 pom.xml
 pom.xml.asc
+/.cpcache/default.libs
+/.cpcache/default/default.cp

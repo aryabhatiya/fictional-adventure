@@ -356,10 +356,6 @@ client’s work as Araybatiya. And best of all, its not  “talk” it's “walk
 : 11
 
 ** Clojure Run time Data Loading
-#+BEGIN_SRC clojure
-
-
-#+END_SRC
 
 #+BEGIN_SRC clojure
 (use '[cemerick.pomegranate :only (add-dependencies)])
@@ -441,6 +437,7 @@ tutotial https://lambdaisland.com/episodes/clojurescript-interop
   (partial handle-transaction-report! ws-connection))
 #+END_SRC
 ** Testing from Repl
+https://stackoverflow.com/questions/21294294/run-tests-from-clojure-repl-and-leiningen
 #+BEGIN_SRC clojure
 (require '[clojure.test :refer [run-tests]])
 (require 'your-ns.example-test)

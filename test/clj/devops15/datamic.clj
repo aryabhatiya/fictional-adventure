@@ -165,23 +165,25 @@
                          :dns/isactive? true
                          :dns/host "192.168.3.3"
                          :dns/path :home:xen1:devops15
-                         :dns/serice-id-many [{:dns/service "datomic"
+                         :dns/serice-id-many [{:dns/service-name :datomic
                                                :dns/isactive? true
                                                :dns/uri "datomic:mem://localhost:4334/framework-test"}
-                                              {:dns/service  "http-kit"
+                                              {:dns/service-name :http-kit
                                                :dns/isactive? true
                                                :dns/port 4342 }
-                                              {:dns/service  "figwheel"
+                                              {:dns/service-name :figwheel
                                                :dns/isactive? true
-                                               :dns/port 4342 }]}
-                        {:db/id "datomic"
-                         :dns/service-name :datomic}
-                        {:db/id "http-kit"
-                         :dns/service-name :http-kit}
-                        {:db/id "figwheel"
-                         :dns/service-name :figwheel}
-                        ])]
+                                               :dns/port 4342 }]}])]
           t))
+    (is (= :bootstrap (:dns/name
+                       (d/touch
+                        (d/entity (d/db (:conn datomic-dns-mock))
+                                  (ffirst (d/q '[:find ?e
+                                                 :where
+                                                 [?e :dns/name :bootstrap]
+                                                 [?e :dns/serice-id-many ?c]
+                                                 ]
+                                               (d/db (:conn datomic-dns-mock)))))))))
     (alter-var-root #'datomic-dns-mock component/stop)))
 
 

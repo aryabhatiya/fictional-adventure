@@ -4,8 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[com.cemerick/pomegranate "0.3.1"]
-                 [org.clojure/clojure "1.8.0"]
+  :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.671" :scope "provided"]
                  [com.cognitect/transit-clj "0.8.300"]
                  [ring "1.6.2"]
@@ -21,6 +20,7 @@
                  [reagent "0.6.0"]
                  [devcards "0.2.2" :exclusions [cljsjs/react]]
                  [com.cognitect/transit-cljs "0.8.239"]
+                 [instaparse "1.4.7"]
                  [com.datomic/datomic-pro "0.9.5561" :exclusions [com.google.guava/guava]]
                  ;;[com.datomic/datomic-free "0.9.5561.54" :exclusions [com.google.guava/guava]]
                  ]
