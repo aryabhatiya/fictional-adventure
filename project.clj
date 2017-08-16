@@ -21,8 +21,8 @@
                  [devcards "0.2.2" :exclusions [cljsjs/react]]
                  [com.cognitect/transit-cljs "0.8.239"]
                  [instaparse "1.4.7"]
-                 [com.datomic/datomic-pro "0.9.5561" :exclusions [com.google.guava/guava]]
-                 ;;[com.datomic/datomic-free "0.9.5561.54" :exclusions [com.google.guava/guava]]
+                 ;; [com.datomic/datomic-pro "0.9.5561" :exclusions [com.google.guava/guava]]
+                 [com.datomic/datomic-free "0.9.5561.54" :exclusions [com.google.guava/guava]]
                  ]
 
   :plugins [[lein-cljsbuild "1.1.6"]
