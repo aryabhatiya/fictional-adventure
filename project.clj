@@ -8,6 +8,7 @@
                  [org.clojure/clojurescript "1.9.671" :scope "provided"]
                  [com.cognitect/transit-clj "0.8.300"]
                  [ring "1.6.2"]
+                 [org.clojure/core.match "0.3.0-alpha4"]
                  [ring/ring-defaults "0.3.1"]
                  [bk/ring-gzip "0.2.1"]
                  [radicalzephyr/ring.middleware.logger "0.6.0"]

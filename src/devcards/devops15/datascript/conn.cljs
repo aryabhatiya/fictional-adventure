@@ -11,10 +11,6 @@
    [reagent.core :as reagent]
    [cljs.test    :as t :refer-macros [is are testing]]))
 
-(def schema { :aka { :db/cardinality :db.cardinality/many }})
-(def datoms #{(d/datom 1 :age  17)
-              (d/datom 1 :name "Ivan")})
-
 (deftest test-ways-to-create-conn
   (let [conn (d/create-conn)]
     (is (= #{} (set (d/datoms @conn :eavt))))
