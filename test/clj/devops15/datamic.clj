@@ -102,12 +102,12 @@
                         :db/doc               "service class"
                         }]}))
 
-(defn database-many []
-  (component/system-map
-   :dev-hello4 (new-datomic-db  )
-   :mem-todo datomic-mock-db))
+;; (defn database-many []
+;;   (component/system-map
+;;    :dev-hello4 (new-datomic-db  )
+;;    :mem-todo datomic-mock-db))
 
-(def states (database-many))
+;;(def states (database-many))
 
 
 (deftest datomic-lifecycle
