@@ -2,10 +2,15 @@
   (:require-macros
    [devcards.core :refer [defcard-doc
                           defcard-rg
+                          deftest
                           mkdn-pprint-source]])
   (:require
+   [datascript.core :as d]
+   [datascript.db :as db]
    [devcards.core]
-   [reagent.core :as reagent]))
+   [reagent.core :as reagent]
+   [cljs.test    :as t :refer-macros [is are testing]]))
+
 
 
 (defonce app-state (reagent/atom {:count 0}))
