@@ -10,7 +10,9 @@
    [devops15.datascript.index]
    [devops15.datascript.listen]
    [devops15.datascript.pull_api]
-   [devops15.todo-app]))
+   [devops15.todo-app]
+   [devops15.connection]
+   [devops15.rum.cards]))
 
 
 (dc/start-devcard-ui!)
